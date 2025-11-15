@@ -16,7 +16,7 @@
 
 body {
   overflow-x: hidden;
-    background-color: #000;    
+  background-color: #000;    
   min-height: 100vh; 
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .logo-hero {
-  height: 200px;
+  height: 300px;
   width: auto;
   max-width: 90%;
   cursor: pointer;
@@ -101,6 +101,7 @@ body {
 
 .card-item {
   position: relative;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -190,7 +191,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-bg {
-    min-height: 59vh;
+    min-height: 56vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,7 +204,7 @@ body {
   }
 
   .logo-hero {
-    height: 55px;
+    height: 100px;
   }
 
   .cards-section {
@@ -219,17 +220,10 @@ body {
   .text-center.mb-12 {
     margin-bottom: 8px !important;
   }
-  .grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 4px !important;
-    max-width: 100% !important;
-  }
 
   .card-item {
     border-radius: 8px !important;
     min-height: 0;
-    
   }
 
   .card-item:hover {
@@ -283,7 +277,7 @@ body {
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-items-center">
 
         <a href="#" class="card-item" onclick="event.preventDefault()">
           <img src="./img/ensaio2.jpg" alt="Consulta Online">
